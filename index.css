@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #0A0E13;
+  color: #F5F7FA;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Manrope", system-ui, sans-serif;
+}
+
+/* thin scrollbar for the phone-frame content area */
+.scroll-thin::-webkit-scrollbar { width: 4px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: #26313B; border-radius: 4px; }
+
+.input {
+  width: 100%;
+  background: #141B22;
+  border: 1px solid #26313B;
+  color: #F5F7FA;
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+.input:focus {
+  outline: 2px solid #C6FF4D;
+  outline-offset: 1px;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; color: #14201a; }
+}
